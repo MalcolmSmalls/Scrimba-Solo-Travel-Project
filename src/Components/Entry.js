@@ -1,26 +1,28 @@
 
-function Entry () {
+function Entry (props) {
+    // console.log(props)
+
     return (
         <div className = "entry-container">
             <div className = "image-container">
-                <img src="./japan.jfif"/>
+                <img src={props.item.photo}/>
             </div>
             <div className = "right-container">
                 <span className = "symbol-span">
                     <i className="fa-solid fa-location-dot"></i>
                 </span>
                 <span className = "location-span">
-                    Japan
+                    {props.item.location}
                 </span>
                 <span className = "google-span">
-                    <a href="">View on Google Maps</a>
+                    <a href={props.item.googleMapsLink}>View on Google Maps</a>
                 </span>
-                <h2>Mount Fuji</h2>
+                <h2>{props.item.name}</h2>
                 <span className = "date-span">
-                    12 Jan, 2021 - 24 Jan, 2021
+                    {props.item.date}
                 </span>
                 <p className = "entry-paragraph">
-                Mount Fuji is the tallest mountain in Japan, standing at 3,776 meters (12,380 feet). Mount Fuji is the single most popular tourist site in Japan, for both Japanese and foreign tourists.
+                    {props.item.entry}
                 </p>
             </div>
         </div>
