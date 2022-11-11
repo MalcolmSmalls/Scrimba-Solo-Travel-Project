@@ -3,6 +3,7 @@ function Entry (props) {
     // console.log(props)
 
     return (
+        <div className = "main-container">
         <div className = "entry-container">
             <div className = "image-container">
                 <img src={props.item.photo}/>
@@ -26,6 +27,12 @@ function Entry (props) {
                 </p>
             </div>
         </div>
+        {props.item.id === 1 || props.item.id === 2 ? <div className = "bottom-border"></div> : null}
+
+
+
+        </div>
+
     )
 
 }

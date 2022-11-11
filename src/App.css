@@ -87,3 +87,10 @@ header > h1, header > i {
   gap:20px;
   margin-block:10px;
 }
+
+
+.bottom-border {
+  border-bottom:2px #F5F5F5 solid;
+  width:478px;
+  margin:21px auto 0 auto
+}
