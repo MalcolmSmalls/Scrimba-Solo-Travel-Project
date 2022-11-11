@@ -27,3 +27,52 @@ header > h1, header > i {
   padding-block:20px;
 
 }
+
+.entry-container {
+  display:flex;
+  border-radius:5px;
+  gap: 19px;
+}
+
+.image-container > img {
+  width:125px;
+  height:168px;
+  object-fit:cover;
+  border-radius:5px;
+}
+
+.right-container i {
+  color:#F55A5A;
+  font-size:10.24px;
+}
+
+.right-container > .location-span {
+  padding-left:5px;
+  text-transform:uppercase;
+  font-size:10.24px;
+  letter-spacing:2px;
+}
+
+.right-container a {
+  color:#918E9B;
+  font-size:10.24px;
+  padding-left:14px;
+}
+
+.right-container h2 {
+  font-size:25px;
+  font-weight:bold;
+  margin-top:4px;
+  margin-bottom:10px;
+}
+
+.date-span {
+  font-weight:bold;
+  font-size:10.24px;
+  margin-top:0px;
+}
+
+.entry-paragraph {
+  width:326px;
+  font-size:10.24px;
+}
